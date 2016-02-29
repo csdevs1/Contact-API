@@ -14,7 +14,7 @@ class MessageTest < ActiveSupport::TestCase
     test 'should accept valid attributes' do
         valid_attrs = {
             name: 'gabriel',
-            email: 'gabriel@example.com',
+            email: 'test@example.com',
             subject: 'hi',
             content: 'sfasad'
         }

@@ -16,7 +16,7 @@ class MessageMailerTest < ActionMailer::TestCase
 
         refute ActionMailer::Base.deliveries.empty?
 
-        assert_equal ['gabrielbit1492@gmail.com'], email.to
+        assert_equal ['test@example.com'], email.to
         assert_equal ['cornholio@example.com'], email.from
         assert_equal 'Hi', email.subject
         assert_equal 'Hello from the internet', email.body.to_s

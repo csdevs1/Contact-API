@@ -1,5 +1,5 @@
 class MessageMailer < ApplicationMailer
-    default :to => "gabrielbit1492@gmail.com"
+    default :to => ENV["EMAIL_ACCOUNT"]
     def message_me(msg)
         @msg = msg
         #mail from: @msg.email, subject: @msg.subject, body: @msg.content

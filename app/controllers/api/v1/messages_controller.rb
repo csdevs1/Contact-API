@@ -14,7 +14,8 @@ module Api
                  #   
                 #end
                 @message = Message.new(message_params)
-                respond_with MessageMailer.message_me(@message).deliver_now
+                MessageMailer.message_me(@message).deliver_now
+                render json: {message: 'Great'}, status: 200
             end
 
             private
